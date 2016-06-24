@@ -126,11 +126,9 @@ cleanBackups () {
 	echo "Cleaning old backups..."
 
 	#Delete backups older than a day
-	#find "$BACKUP_LOCATION" -name "$CLEAN" -type f -mtime +1 | xargs rm -f && echo "Source Clean Done!"
 	find . -name "$CLEAN" -type f -mmin +$((60*24)) -exec rm -f {} \; && echo "Source Clean Done!"
 
 	#Delete backups older than 6 days
-	#find "$BACKUP_LOCATION" -name "$COMMON" -type f -mtime +6 | xargs rm -f && echo "Sites Clean Done!"
 	find . -name "$COMMON" -type f -mmin +$((60*144)) -exec rm -f {} \; && echo "Sites Clean Done!"
 }
 
