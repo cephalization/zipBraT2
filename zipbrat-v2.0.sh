@@ -112,7 +112,7 @@ checkSourceDir () {
 archiveTBZ () {
 	echo "Starting backup of source files..."
 	tar -chjvf $1$2 $3 --exclude=$4 && echo "Done!"
-	if [ $6 -eq 2 ] && [ $DATE_CHECK -eq $5 ] || [ $6 -eq 2 ] && [ "$DEBUG" == "DEBUG" ]; then
+	if [ $6 -eq 2 ] && [ $DATE_CHECK -eq $BACKUP_DAY ] || [ $6 -eq 2 ] && [ "$DEBUG" == "DEBUG" ]; then
 		if [ -d $4 ]; then
 			echo "Starting backup of Sites files..."
 			tar -chjvf $1$DBACKUP_NAME $4 && echo "Done!"
