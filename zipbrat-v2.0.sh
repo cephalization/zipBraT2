@@ -4,7 +4,7 @@
 # - Create daily file and optional weekly database backups   #
 # - Files are archived with tar and compressed with bzip2    #
 # - Meant for a Drupal Webserver but can be adapted          #
-# If something goes wrong, blame Anthony Powell              #
+# If something goes wrong, don't blame Anthony Powell        #
 ##############################################################
 
 ############# USAGE SCENARIO #########################################
