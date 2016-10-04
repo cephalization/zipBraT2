@@ -4,6 +4,8 @@ Archive/Compress and manage files
 ## What the heck is it?
 It is a shell backup script written for bash on linux. Tested on CentOS and RedHat.
 
+DISCLAIMER: I AM NOT RESPONSIBLE FOR LOSS OF DATA --- USE AT YOUR OWN RISK
+
 Mostly meant to backup a Drupal Webserver and its nested websites but it is versatile and configurable for other use cases.
 
 __Features:__
